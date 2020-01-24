@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />		
+        <title>Stenden Support Desk</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    </head>
+    <body>
+
+        <div id="container">
+            <header>
+
+                <div id="logo_box">
+                    <img src="images/logo.png" alt="Logo"/>
+                </div>
+                <div class="topright_box">
+                    <a href="logout.php">Logout</a>
+                    <a href="index.php">Home</a>
+                </div>
+
+                <h1 id="title">Alnuvo Support Desk</h1>
+
+            </header>
+
+            <nav>
+
+                <ul>
+
+                    <li><a href="ProblemStudent.php">Tickets</a></li>
+                    <li><a href="reservation_input.php">Reservations</a></li>
+                    <li><a href="orders.html">Merch</a></li>
+                </ul>
+
+            </nav>
+
+            <main>
+                <div id="fillup_problem">
+
+                    <div id="pagecontainer">
+
+                        <div id="h1TitleProblem">
+                            <h1>Orders</h1>							
+                        </div>
+
+                        <div id="orderinputbox">
+                            <div id="orderform">
+                                <form method="POST" action="#" id="orderform">
+                                    <p><b>Address: </b></p>
+                                    <input type="text" name="address" class="emailPassword">
+                                    <p><b>City: </b></p>
+                                    <input type="text" name="city" class="emailPassword">
+                                    <p><b>Postal code: </b></p>
+                                    <input type="text" name="zip" class="emailPassword"><br>
+                                    <label for="pay"><b>Payment method</b></label><br>
+                                    <select name="Payment" id="pay">
+                                        <option value="Cash">Cash</option>
+                                        <option value="Paypal">Paypal</option>
+                                        <option value="Ideal">Ideal</option>
+                                        <option value="Credit">Credit</option>
+                                    </select><br><br>
+                                    <input type="submit" name="submit" value="order" id="submit">
+                                </form>
+                            </div>
+                        </div>
+
+                        <div id="orderimgbox">
+
+                            <div id="orderimage">
+                                <img src="images/merch1.jpg">
+                            </div>
+                            <table id="order_table">
+                                <tr>
+                                    <th>Product: </th>
+                                    <td>T-Shirt</td>
+                                </tr>
+                                <tr>
+                                    <th>Amount: </th>
+                                    <td>
+                                        <form method="POST" action="">
+                                            <input type="number" name="amount">
+                                        </form>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>					
+
+                </div>
+                <div id="faq_box">
+
+                    <h1 class="faq">
+                        Actions
+                    </h1>
+
+                    <ul>
+                        <li><a class="signupbutton2" href="#">Submit your order</a></li>
+                    </ul>
+
+                </div>
+
+            </main>
+
+             <footer>
+                <p>University of Alnuvo&copy; If you need furthur help contact us&nbsp;<a href="mailto:alnuvo@support.com">here</a></p>
+            </footer>
+        </div>	
+
+    </body>
+</html>

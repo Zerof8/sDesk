@@ -1,0 +1,486 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    font-family: arial, verdana, sans-serif;
+    color: black;
+}
+
+#container {
+    margin: 0 auto;
+    max-width: 1200px;
+    min-height: 750px;
+    box-shadow: 10px 0px 20px -10px rgb(0,0,0), -10px 0px 10px -10px rgb(0,0,0);
+}
+
+
+/*header part*/
+
+
+header {
+    height: 150px;
+    background: #b6e8e9; /* Old browsers */
+    background: -moz-linear-gradient(top,  #b6e8e9 0%, #92a4d2 98%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #b6e8e9 0%,#92a4d2 98%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #b6e8e9 0%,#92a4d2 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6e8e9', endColorstr='#92a4d2',GradientType=0 ); /* IE6-9 */
+
+}
+
+#logo_box {
+    width: 160px;
+    height: 150px;
+    position: relative;
+    float: left;
+}
+
+#logo_box img {
+    display: block;
+    width: 130px;
+    height: 140px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+h1#title {
+    color: white;
+    margin: 40px 0px 0px 10px;
+    float: left;
+    font-size: 50px;
+}
+
+.topright_box {
+    float: right;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+.topright_box a {
+    color: black;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.topright_box a:hover {
+    background-color: #5DBCD2;
+    transform: scale(1.03);
+    color: black;
+    border-radius: 15px;
+    opacity: 0.8;
+}
+
+nav {
+    height: 45px;
+    width: 100%;
+    background-color: black;
+    clear: both;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    color:#B514D9;	
+    display: inline-block;
+    list-style-type: none;
+    width:20%;
+    background-color:black;
+    box-sizing: border-box;
+    text-align:center;
+}
+
+nav ul li a {
+    text-decoration:none;
+    font-size:21px;
+    display: block;
+    padding: 9px;
+    transition: 0.3s ease;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: #5DBCD2;
+    transform: scale(1.05);
+    color: black;
+    border-radius: 3px;
+}
+
+nav ul li a.active {
+    background-color: #5DBCD2;
+    transform: scale(1.05);
+    color: black;
+    border-radius: 3px
+}
+
+/*header part end*/
+
+/*body part*/
+
+#news_box {
+    float: left;
+    width: 844px;
+    height: 533px;
+    overflow: auto;
+
+}
+
+#news_box #imgbox {
+    background-image: url("images/background.jpg");
+    background-color: black;
+    height: 305px;
+    width: 842px;
+    border-bottom: 2px solid black;
+}
+
+#faq_box {
+    float: left;
+    width: 354px;
+    height: 533px;
+    border-left: 2px solid black;
+}
+
+#faq_box h1.faq 
+{
+    margin: 20px 0px 0px 80px;
+    font-size: 60px;
+}
+
+#faq_box ul {
+    list-style-type: none;
+}
+
+#faq_box ul li {
+    padding: 30px 10px 0px 60px;
+}
+
+#faq_box ul li a {
+    color: #3e82ff;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+#faq_box ul li a:hover {
+    font-size: 102%;
+    color: red;
+}
+
+#faq_box ul li a.signupbutton2 {
+    text-decoration: none;
+    border-radius: 100px;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    display: block;
+    background-color: white;
+    border: 1px solid #1da1f2;
+    color: #1da1f2;
+    width: 200px;
+    transition: 0.3s ease;
+}
+
+#faq_box ul li a.signupbutton2:hover {
+    background-color: #5DBCD2;
+    color: black;
+}
+/**************
+Problems Page
+**************/
+
+#probleminputbox label{
+    margin-left: 15px;
+    margin-top: 12px;
+    float: left;
+}
+#probleminputbox {
+    margin:0 auto;
+    height: 380px;
+    width: 525px;
+    margin-top: 75px;
+    border: 2px solid black;
+    background-color: #92a4d2;
+}
+.InputFormProblems{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+    border-radius: 0px;
+    border-style: solid;
+    border-color: rgb( 70,70,70 );
+    border-width: 0 0 2px 0;
+    background-color: transparent;
+    margin-left: 15px;
+}
+textarea{
+    height: 150px;
+    width:400px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+    border-radius: 0px;
+    border-style: solid;
+    border-color: rgb( 70,70,70 );
+    border-width: 0 0 2px 0;
+    background-color: transparent;
+    margin-left: 15px;
+}
+#departmentsSelect{
+    width:80px;
+    height:40px;
+}
+#h1TitleProblem h1{
+    text-align:center;
+    margin:0 auto;
+    color:black;
+    font-size:24pt;
+}
+
+#h1TitleProblem {
+    margin-top:10px
+}
+
+#fillup_problem{
+    float: left;
+    width: 720px;
+    height: 540px;
+    background-color: white;
+}
+/****
+Orders
+***/
+
+#orderinputbox {
+    float:left;
+    height:446px;
+    width:325px;
+}
+
+#orderimgbox {
+    float:left;
+    height:446px;
+    width:325px;
+}
+
+.emailPassword{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    resize: none;
+    border-radius: 0px;
+    border-style: solid;
+    border-color: rgb( 70,70,70 );
+    border-width: 0 0 2px 0;
+    background-color: transparent;
+    width:150px;
+}
+
+.emailPassword:focus{
+    outline:none;
+}
+
+#orderform {
+    margin-left: 43px;
+    margin-top: 22px;
+}
+
+#submit{
+    background-color:rgb(0,191,255);
+    width:100px;
+    height:25px;
+    color: white;
+    padding: 2px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    margin-left:27px;
+}
+#submit:hover{
+    background-color:rgb(0,191,255);
+}
+
+#orderimage {
+/*    background-image: url("images/merch1.jpg");*/
+
+    background-repeat: no-repeat;
+    background-size: 50%;
+    width:150px;
+    height:150px;
+    float: right;
+    border: 2px solid black;    
+    margin-top: 36px;
+    margin-right: 79px;
+}
+
+
+
+#order_table {
+    width: 15px;
+    float: right;
+    margin-top:40px;
+    margin-right:50px;
+}
+
+table, td, th {
+
+}
+
+th {
+    height: 35px;
+}
+td {
+    height: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+/*****
+Admin HRM
+******/
+
+#divdata_admin {
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    height: 380px;
+    overflow-y: auto;
+}
+#divdata_admin table {
+    width: 820px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+/****
+Orders
+***/
+
+#orderinputbox {
+    float:left;
+    height:446px;
+    width:325px;
+}
+
+#orderimgbox {
+    float:left;
+    height:446px;
+    width:325px;
+}
+
+.emailPassword{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    resize: none;
+    border-radius: 0px;
+    border-style: solid;
+    border-color: rgb( 70,70,70 );
+    border-width: 0 0 2px 0;
+    background-color: transparent;
+    width:150px;
+}
+
+.emailPassword:focus{
+    outline:none;
+}
+
+#orderform {
+    margin-left: 43px;
+    margin-top: 22px;
+}
+
+#submit{
+    background-color: rgb(70,130,180);
+    width:100px;
+    height:25px;
+    color: white;
+    padding: 2px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    margin-left:27px;
+}
+#submit:hover{
+    background-color:rgb(0,191,255);
+}
+
+#orderimage {
+    background-image: url("images/marioluigi.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width:150px;
+    height:150px;
+    float: right;
+    border: 2px solid black;    
+    margin-top: 36px;
+    margin-right: 79px;
+}
+
+
+
+#order_table {
+    width: 15px;
+    float: right;
+    margin-top:40px;
+    margin-right:50px;
+}
+
+table, td, th {
+
+}
+
+th {
+    height: 35px;
+}
+td {
+    height: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+/****
+reserv
+***/
+
+#reservinputbox {
+    height: 180px;
+    width: 325px;
+    margin-top: 65px;
+    margin-left: 170px;
+    border: 2px solid black;
+    background-color: #92a4d2;
+}
+#h1TitleReserve{
+    margin-left:200px;
+    margin-top: 30px;
+}
+footer {
+    float: left;
+    width: 100%;
+     background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color:black;
+}
