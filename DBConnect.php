@@ -11,7 +11,8 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        $db_name = "ticket_system";
+        //henno
+		$db_name = "ticket_system";
 //assign the connection and selected database to a variable
         $DBConnect = mysqli_connect("localhost", "root", "");
         if ($DBConnect === FALSE) {
